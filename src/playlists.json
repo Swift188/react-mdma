@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Leuke playlist",
+        "icon": "img/images.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Coole playlist",
+        "icon": "img/images.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "toffe playlist",
+        "icon": "img/images.jpeg"
+    }
+]

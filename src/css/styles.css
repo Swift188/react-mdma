@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "Glory";
+  src: url(../fonts/Glory-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "A4 SPEED";
+  src: url(../fonts/A4SPEED-Bold.ttf);
+}
+.btn {
+  width: auto;
+  border-radius: 100px;
+  display: inline-flex;
+  padding: 15px 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn.btn-lg {
+  padding: 20px 40px;
+  font-size: 1.25rem;
+}
+.btn.btn-xl {
+  padding: 20px 38px;
+  font-size: 1.5rem;
+}
+.btn.btn-block {
+  width: 100%;
+}
+
+.bg-primary {
+  background: #580980;
+}
+
+.text-primary {
+  color: #580980;
+}
+
+.btn-primary {
+  background: #580980;
+}
+.btn-primary:hover {
+  background: #680b98;
+}
+.btn-primary:active {
+  background: #370650;
+}
+
+.bg-secondary {
+  background: #E86A4D;
+}
+
+.text-secondary {
+  color: #E86A4D;
+}
+
+.btn-secondary {
+  background: #E86A4D;
+}
+.btn-secondary:hover {
+  background: #eb7d64;
+}
+.btn-secondary:active {
+  background: #e24420;
+}
+
+.bg-red {
+  background: #B82F4D;
+}
+
+.text-red {
+  color: #B82F4D;
+}
+
+.btn-red {
+  background: #B82F4D;
+}
+.btn-red:hover {
+  background: #cb3556;
+}
+.btn-red:active {
+  background: #8f253c;
+}
+
+html, body {
+  background: #160220;
+  color: #FFFFFF;
+  font-family: "Glory";
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+nav .logo {
+  font-family: "A4 SPEED";
+}
+
+.logo {
+  font-family: "A4 SPEED";
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-bottom: 1rem;
+}
+.form-group label {
+  font-size: 22px;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  background: #790cb0;
+  border: none;
+  font-size: 16px;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.2rem;
+  color: #FFFFFF;
+  border-radius: 2px;
+}
+input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.25rem;
+  }
+  .btn.btn-lg {
+    font-size: 1.75rem;
+  }
+  .btn.btn-xl {
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .btn {
+    font-size: 1.4rem;
+  }
+  .btn.btn-lg {
+    font-size: 2.5rem;
+  }
+  .btn.btn-xl {
+    padding: 1.25rem 3rem;
+    font-size: 2rem;
+  }
+}
