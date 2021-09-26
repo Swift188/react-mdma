@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
-import '../css/register.css';
+import './css/register.css';
+import PropTypes from 'prop-types';
 
 const Login = ({setUser, setLoggedIn}) => {
     let [username, setUsername] = useState('');
@@ -32,7 +33,7 @@ const Login = ({setUser, setLoggedIn}) => {
                     <input type="password" name="password" placeholder="password" value={password} onChange={event => setPassword(event.target.value)} />
                 </div>
 
-                <span>Don't have an account yet? <a href="<?= route('register'); ?>">Register now.</a></span>
+                <span>Don&apos;t have an account yet? <a href="<?= route('register'); ?>">Register now.</a></span>
 
                 <div className="btn-right">
                     <button type="submit" className="btn btn-primary">Login</button>
@@ -40,6 +41,11 @@ const Login = ({setUser, setLoggedIn}) => {
             </form>
         </div>
     )
+}
+
+Login.propTypes = {
+    setUser: PropTypes.function.isRequired,
+    setLoggedIn: PropTypes.function.isRequired
 }
 
 export default Login

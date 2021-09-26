@@ -2,16 +2,19 @@
     {
         "id": 1,
         "name": "Leuke playlist",
-        "icon": "img/images.jpeg"
+        "icon": "img/images.jpeg",
+        "pinned": false
     },
     {
         "id": 2,
         "name": "Coole playlist",
-        "icon": "img/images.jpeg"
+        "icon": "img/images.jpeg",
+        "pinned": false
     },
     {
         "id": 3,
         "name": "toffe playlist",
-        "icon": "img/images.jpeg"
+        "icon": "img/images.jpeg",
+        "pinned": false
     }
 ]

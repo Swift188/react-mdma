@@ -1,23 +1,30 @@
+import PropTypes from 'prop-types';
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Playlist = ({ playlist }) => {
+const Playlist = ({ playlist, togglePinned }) => {
     return (
         <div className="playlist">
             <img className="playlist-img" src="img/images.jpeg" alt={playlist.name} />
-            <div className="playlist-details">
-                <a className="playlist-name">{playlist.name}</a>
+            <Link to={`/playlist/${playlist.id}`}  className="playlist-details">
+                <div className="playlist-name">{playlist.name}</div>
                 {/* <div className="playlist-author">Group name</div> */}
-            </div>
+            </Link>
             <div className="playlist-buttons">
-                <a href="#" className="icon-btn">
-                    <img src="img/push-pin.png" alt="Pin" />
+                <a href="#" onClick={(e) => togglePinned(e, playlist.id)} className="icon-btn">
+                    <img src={playlist.pinned ? 'img/push-pin.png' : 'img/push-pin-empty.png'} alt="Pin" />
                 </a>
-                <a href="#" className="icon-btn">
+                {/* <a href="#" className="icon-btn">
                     <img src="img/vertical-dots.png" alt="Options" />
-                </a>
+                </a> */}
             </div>
         </div>
     )
+}
+
+Playlist.propTypes = {
+    playlist: PropTypes.object.isRequired,
+    togglePinned: PropTypes.func.isRequired
 }
 
 export default Playlist
