@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Glory';
+  font-family: "Glory";
   src: url(../fonts/Glory-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: 'A4 SPEED';
+  font-family: "A4 SPEED";
   src: url(../fonts/A4SPEED-Bold.ttf);
 }
 .btn {
@@ -91,7 +91,7 @@ html,
 body {
   background: #160220;
   color: #ffffff;
-  font-family: 'Glory';
+  font-family: "Glory";
   margin: 0;
   scroll-behavior: smooth;
   font-size: 16px;
@@ -100,11 +100,11 @@ body {
 }
 
 nav .logo {
-  font-family: 'A4 SPEED';
+  font-family: "A4 SPEED";
 }
 
 .logo {
-  font-family: 'A4 SPEED';
+  font-family: "A4 SPEED";
   font-size: 2.5rem;
 }
 

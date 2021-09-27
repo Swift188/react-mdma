@@ -1,0 +1,69 @@
+{
+	"playlists": [
+		{
+			"id": 1,
+			"name": "Leuke playlist",
+			"icon": "img/images.jpeg",
+			"pinned": false,
+			"creator": "daniel"
+		},
+		{
+			"id": 2,
+			"name": "Coole playlist",
+			"icon": "img/images.jpeg",
+			"pinned": false,
+			"creator": "lawrence"
+		},
+		{
+			"id": 3,
+			"name": "toffe playlist",
+			"icon": "img/images.jpeg",
+			"pinned": false,
+			"creator": "lawrence"
+		}
+	],
+	"playlist_songs": [
+		{
+			"id": 1,
+			"playlist_id": 1,
+			"song_id": 1
+		},
+		{
+			"id": 2,
+			"playlist_id": 1,
+			"song_id": 1
+		},
+		{
+			"id": 3,
+			"playlist_id": 2,
+			"song_id": 2
+		},
+		{
+			"id": 4,
+			"playlist_id": 1,
+			"song_id": 1
+		},
+		{
+			"id": 5,
+			"playlist_id": 2,
+			"song_id": 3
+		}
+	],
+	"songs": [
+		{
+			"id": 1,
+			"name": "test",
+			"artist": "artists 1"
+		},
+		{
+			"id": 2,
+			"name": "test 2",
+			"artist": "artists 2"
+		},
+		{
+			"id": 3,
+			"name": "test 3",
+			"artist": "artists 3"
+		}
+	]
+}

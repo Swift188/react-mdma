@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/register.css';
+import '../css/register.css';
 import PropTypes from 'prop-types';
 
 const Login = ({ setUser, setLoggedIn }) => {
