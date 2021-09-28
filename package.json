@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "sass src/scss:src/css --watch --no-source-map"
+    "watch": "sass src/scss:src/css --watch --no-source-map",
+    "server": "json-server --watch db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
