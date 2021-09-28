@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import AddPlaylistModal from '../components/AddPlaylistModal';
-import Playlist from '../components/Playlist';
+import { Link } from 'react-router-dom';
+// import AddPlaylistModal from '../components/AddPlaylistModal';
 // import PropTypes from 'prop-types';
+import Playlist from '../components/Playlist';
 
 const Home = () => {
-	const [modalOpen, setModalOpen] = useState(false);
+	// const [modalOpen, setModalOpen] = useState(false);
 	const [search, setSearch] = useState('');
 	const [searchResults, setSearchResults] = useState([]);
-	let [playlists, setPlaylists] = useState([]);
+	const [playlists, setPlaylists] = useState([]);
 
 	useEffect(async () => {
 		if (localStorage.getItem('playlists') == null) {
@@ -25,7 +26,6 @@ const Home = () => {
 				return { ...playlist, pinned: !playlist.pinned };
 			return playlist;
 		});
-		// updated.sort()
 		updated.sort((a, b) => {
 			if (a.pinned > b.pinned) return -1;
 			if (b.pinned > a.pinned) return 1;
@@ -41,12 +41,6 @@ const Home = () => {
 
 	useEffect(() => {
 		setSearchResults(
-			// playlists.filter((playlist) => {
-			// 	if (playlist['name'].includes(search)) {
-			// 		console.log(playlist, playlist['name'].includes(search));
-			// 		return { ...playlist };
-			// 	}
-			// })
 			playlists.filter((playlist) =>
 				playlist.name.toLowerCase().includes(search.toLowerCase())
 			)
@@ -58,7 +52,7 @@ const Home = () => {
 			{/* {loggedIn ? <button onClick={logout}>Logout</button> : <button onClick={toggleLogin}>Login</button>} */}
 
 			{/* {loginVisible == true & !loggedIn && <Login setUser={setUser} setLoggedIn={setLoggedIn}/>} */}
-			{modalOpen && <AddPlaylistModal />}
+			{/* {modalOpen && <AddPlaylistModal />} */}
 
 			<div className='search-bar'>
 				<input
@@ -68,33 +62,27 @@ const Home = () => {
 					placeholder='Search'
 					onChange={(e) => setSearch(e.target.value)}
 				/>
-				<a
-					onClick={(e) => setModalOpen(!modalOpen, e)}
+				<Link
+					to='/playlists/create'
+					// onClick={(e) => setModalOpen(!modalOpen, e)}
 					className='add-playlist-btn'
 					href='#'
 				>
 					<img src='/img/plus-2.png' alt='Add song' />
-				</a>
+				</Link>
 			</div>
 
 			<h1 className='text-center'>Playlists</h1>
 			<div className='splitter'></div>
 
 			<div className='playlist-list'>
-				{searchResults.map((playlist) => {
-					try {
-						return (
-							<Playlist
-								key={playlist.id}
-								playlist={playlist}
-								togglePinned={togglePinned}
-							/>
-						);
-					} catch (e) {
-						console.error(e);
-						console.log(searchResults);
-					}
-				})}
+				{searchResults.map((playlist) => (
+					<Playlist
+						key={playlist.id}
+						playlist={playlist}
+						togglePinned={togglePinned}
+					/>
+				))}
 			</div>
 		</div>
 	);

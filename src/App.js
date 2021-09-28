@@ -5,7 +5,7 @@ import './css/playlists.css';
 // import playlistsjson from './playlists.json';
 // import Login from './Login';
 import Home from './pages/Home';
-import Playlist from './pages/Playlist';
+import Playlists from './Playlists';
 
 function App() {
 	// let [user, setUser] = useState(null);
@@ -25,8 +25,8 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path='/playlist/:playlistId'>
-					<Playlist />
+				<Route path='/playlists'>
+					<Playlists />
 				</Route>
 				<Route path='/'>
 					{/* <Home loggedIn={loggedIn} loginVisible={loginVisible} logout={logout} /> */}

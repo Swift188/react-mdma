@@ -3,23 +3,72 @@
 		{
 			"id": 1,
 			"name": "Leuke playlist",
-			"icon": "img/images.jpeg",
+			"icon": "/img/Compilation.jpg",
 			"pinned": false,
 			"creator": "daniel"
 		},
 		{
 			"id": 2,
 			"name": "Coole playlist",
-			"icon": "img/images.jpeg",
+			"icon": "/img/Compilation.jpg",
 			"pinned": false,
 			"creator": "lawrence"
 		},
 		{
 			"id": 3,
 			"name": "toffe playlist",
-			"icon": "img/images.jpeg",
+			"icon": "/img/images.jpeg",
 			"pinned": false,
 			"creator": "lawrence"
+		},
+		{
+			"name": "New playlist",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 4
+		},
+		{
+			"name": "New playlist",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 5
+		},
+		{
+			"name": "New playlist test",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 6
+		},
+		{
+			"name": "New playlista bcaddas",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 7
+		},
+		{
+			"name": "New playlist a b c",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 8
+		},
+		{
+			"name": "Test100",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 9
+		},
+		{
+			"name": "New playlista new new",
+			"icon": "/img/Compilation.jpg",
+			"pinned": false,
+			"creator": "You",
+			"id": 10
 		}
 	],
 	"playlist_songs": [
