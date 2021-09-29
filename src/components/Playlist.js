@@ -10,14 +10,14 @@ const Playlist = ({ playlist, togglePinned }) => {
 				src={playlist.icon}
 				alt={playlist.name}
 			/>
-			<Link to={`/playlists/${playlist.id}`} className='playlist-details'>
+			<Link to={`/playlist/${playlist.id}`} className='playlist-details'>
 				<div className='playlist-name'>{playlist.name}</div>
 				{/* <div className="playlist-author">Group name</div> */}
 			</Link>
 			<div className='playlist-buttons'>
 				<a
 					href='#'
-					onClick={(e) => togglePinned(e, playlist.id)}
+					onClick={() => togglePinned(playlist.id)}
 					className='icon-btn'
 				>
 					<img

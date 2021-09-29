@@ -1,118 +1,132 @@
 {
-	"playlists": [
-		{
-			"id": 1,
-			"name": "Leuke playlist",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "daniel"
-		},
-		{
-			"id": 2,
-			"name": "Coole playlist",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "lawrence"
-		},
-		{
-			"id": 3,
-			"name": "toffe playlist",
-			"icon": "/img/images.jpeg",
-			"pinned": false,
-			"creator": "lawrence"
-		},
-		{
-			"name": "New playlist",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 4
-		},
-		{
-			"name": "New playlist",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 5
-		},
-		{
-			"name": "New playlist test",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 6
-		},
-		{
-			"name": "New playlista bcaddas",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 7
-		},
-		{
-			"name": "New playlist a b c",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 8
-		},
-		{
-			"name": "Test100",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 9
-		},
-		{
-			"name": "New playlista new new",
-			"icon": "/img/Compilation.jpg",
-			"pinned": false,
-			"creator": "You",
-			"id": 10
-		}
-	],
-	"playlist_songs": [
-		{
-			"id": 1,
-			"playlist_id": 1,
-			"song_id": 1
-		},
-		{
-			"id": 2,
-			"playlist_id": 1,
-			"song_id": 1
-		},
-		{
-			"id": 3,
-			"playlist_id": 2,
-			"song_id": 2
-		},
-		{
-			"id": 4,
-			"playlist_id": 1,
-			"song_id": 1
-		},
-		{
-			"id": 5,
-			"playlist_id": 2,
-			"song_id": 3
-		}
-	],
-	"songs": [
-		{
-			"id": 1,
-			"name": "test",
-			"artist": "artists 1"
-		},
-		{
-			"id": 2,
-			"name": "test 2",
-			"artist": "artists 2"
-		},
-		{
-			"id": 3,
-			"name": "test 3",
-			"artist": "artists 3"
-		}
-	]
+  "playlists": [
+    {
+      "id": 1,
+      "name": "Leuke playlist",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "daniel"
+    },
+    {
+      "id": 2,
+      "name": "Coole playlist",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "lawrence"
+    },
+    {
+      "id": 3,
+      "name": "toffe playlist",
+      "icon": "/img/images.jpeg",
+      "pinned": false,
+      "creator": "lawrence"
+    },
+    {
+      "name": "New playlist",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 4
+    },
+    {
+      "name": "New playlist",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 5
+    },
+    {
+      "name": "New playlist test",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 6
+    },
+    {
+      "name": "New playlista bcaddas",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 7
+    },
+    {
+      "name": "New playlist a b c",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 8
+    },
+    {
+      "name": "Test100",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 9
+    },
+    {
+      "name": "New playlista new new",
+      "icon": "/img/Compilation.jpg",
+      "pinned": false,
+      "creator": "You",
+      "id": 10
+    },
+    {
+      "name": "New playlist",
+      "icon": "",
+      "pinned": false,
+      "creator": "You",
+      "id": 11
+    },
+    {
+      "name": "New playlist a",
+      "icon": "",
+      "pinned": false,
+      "creator": "You",
+      "id": 12
+    }
+  ],
+  "playlist_songs": [
+    {
+      "id": 1,
+      "playlist_id": 1,
+      "song_id": 1
+    },
+    {
+      "id": 2,
+      "playlist_id": 1,
+      "song_id": 1
+    },
+    {
+      "id": 3,
+      "playlist_id": 2,
+      "song_id": 2
+    },
+    {
+      "id": 4,
+      "playlist_id": 1,
+      "song_id": 1
+    },
+    {
+      "id": 5,
+      "playlist_id": 2,
+      "song_id": 3
+    }
+  ],
+  "songs": [
+    {
+      "id": 1,
+      "name": "test",
+      "artist": "artists 1"
+    },
+    {
+      "id": 2,
+      "name": "test 2",
+      "artist": "artists 2"
+    },
+    {
+      "id": 3,
+      "name": "test 3",
+      "artist": "artists 3"
+    }
+  ]
 }

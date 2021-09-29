@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import '../css/playlist.css';
 import Song from '../components/Song';
-import LinkButton from '../components/LinkButton';
+import Button from '../components/Button';
 
 const Playlist = () => {
 	const [songs, setSongs] = useState([]);
@@ -49,7 +49,6 @@ const Playlist = () => {
 				headers: { 'Content-Type': 'application/json' },
 			});
 			await getPlaylists();
-			console.log('reached end');
 		}
 		if (key === 'Escape') {
 			setInputShow(false);
@@ -59,7 +58,7 @@ const Playlist = () => {
 	return (
 		<div className='container'>
 			<div>
-				<LinkButton href='/'>{'<'} Go back</LinkButton>
+				<Button href='/'>{'<'} Go back</Button>
 			</div>
 			<br />
 			<div className='playlist-info'>
@@ -78,7 +77,7 @@ const Playlist = () => {
 							/>
 						) : (
 							<div>
-								<div onClick={setInputShow(true)}>
+								<div onClick={() => setInputShow(true)}>
 									{playlist.name}
 								</div>
 							</div>

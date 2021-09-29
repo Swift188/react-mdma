@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
-const Button = ({ type = 'primary', children, onClick }) => {
-	return (
+const Button = ({ href = '', type = 'primary', children, onClick }) => {
+	return href != '' ? (
+		<Link className={`btn btn-${type}`} to={href}>
+			{children}
+		</Link>
+	) : (
 		<button className={`btn btn-${type}`} onClick={onClick}>
 			{children}
 		</button>
@@ -10,6 +15,7 @@ const Button = ({ type = 'primary', children, onClick }) => {
 };
 
 Button.propTypes = {
+	href: PropTypes.string,
 	type: PropTypes.string,
 	children: PropTypes.any,
 	onClick: PropTypes.func,

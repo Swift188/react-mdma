@@ -25,7 +25,7 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route path='/playlists'>
+				<Route path='/playlist'>
 					<Playlists />
 				</Route>
 				<Route path='/'>
